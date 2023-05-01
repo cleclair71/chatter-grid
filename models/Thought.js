@@ -54,16 +54,19 @@ const ThoughtSchema = new Schema(
     },
     {
         toJSON: {
-            getters: true,
+            virtuals: true,
+            getters: true
         },
         id: false,
     }
 );
 
-const Thought = model('Thought', ThoughtSchema);
+
 // get total count of comments and replies on retrieval
 ThoughtSchema.virtual('reactionCount').get(function () {
     return this.reactions.length;
 });
+
+const Thought = model('Thought', ThoughtSchema);
 
 module.exports = Thought;
