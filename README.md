@@ -22,8 +22,6 @@
 * [Usage](#usage) 
 
 * [Contributing](#contributing)
-
-* [Resources](#resources)
  
 * [license](#license)
 
@@ -83,7 +81,7 @@ npm i
 5. Run the App
 
 ```bash
-\hr-hub> npm start
+\chatter-grid> npm start
 ```
 
 
