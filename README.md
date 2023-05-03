@@ -3,11 +3,11 @@
  <br />
  <div align="center">
  <h1 align="center">ChatterGrid</h1>
-    <a href="https://github.com/cleclair71/CrewCard">
-     <img src="/public/assets/img/inkwel.jpg" alt="Logo" height="200">
+    <a href="https://github.com/cleclair71/chatter-grid">
+     <img src="/assets/chattergrid.jpg" alt="Logo" height="200">
    </a>
     <p align="center">
-      Capturing your thoughts, one note at a time
+      Connect, Share, and Engage
     </p>
   
 <br />
@@ -16,6 +16,8 @@
 * [About the Project](#description) 
 
 * [Added Features](#features)
+
+* [Installation](#installation) 
  
 * [Usage](#usage) 
 
@@ -35,10 +37,11 @@
 <a name="description"></a>
 ## :rocket: About The Project
 <p align="center">
-  <img src="/public/assets/img/capture.png"/>
+  <img src="/assets/screen.JPG"/>
 </p>
+ChatterGrid is a social media platform that allows users to share their thoughts, react to other thoughts, and engage with each other in a fast and efficient way. The platform is built using Node.js, Express.js, and MongoDB, which ensures a seamless and high-performance experience for users.
 
-Inkwel is a note-taking application designed to provide a user-friendly experience for organizing and managing notes. With Inkwel, users can quickly create and save notes, as well as view and edit existing notes with ease. The application uses Express.js to enable fast and efficient communication between the client-side and server-side.
+ChatterGrid provides a space for users to create, edit, and delete thoughts, as well as add reactions to thoughts created by other users. The application is designed with scalability in mind, and can easily accommodate a growing user base. The RESTful API follows best practices for structuring routes and controllers, making it easy to understand and maintain.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -47,20 +50,64 @@ Inkwel is a note-taking application designed to provide a user-friendly experien
 
 ## :star: Features
 
- - A landing page with a link to the notes page
- - A notes page with existing notes listed in the left-hand column, and empty fields to enter a new note title and the note's text in the right-hand column
- - A Save icon that appears in the navigation at the top of the page when a new note title and the note's text are entered
- - The ability to click on an existing note in the list in the left-hand column to view it in the right-hand column
- - The ability to click on the Write icon in the navigation at the top of the page to enter a new note title and the note's text in the right-hand column
+ - Create, update, and delete thoughts
+ - Add and remove reactions to thoughts
+ - View all thoughts or a single thought by its ID
+ - Efficient data storage and retrieval using MongoDB
+ - Express.js for server-side logic and routing
+ - Robust error handling and validations
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<a name="installation"></a>
+
+## :hammer_and_wrench: Installation
+
+1. Clone the repository 
+
+```bash
+git clone https://github.com/cleclair71/chatter-grid.git
+```
+2. Change the Working Directory
+
+```bash
+cd chatter-grid
+```
+3. Install dependencies
+
+```bash
+npm i
+```
+4. Set up your MongoDB instance. You can either use a local MongoDB installation or a cloud-based MongoDB Atlas cluster.
+
+5. Run the App
+
+```bash
+\hr-hub> npm start
+```
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
   <a name="usage"></a>
 
 ## :computer: Usage
 
-* [Deployed Website](https://secret-lake-87319.herokuapp.com/)
+* [Walkthrough Video](https://drive.google.com/file/d/1zaKG9lI1QHlTwZbMzPDv08MquPbT-r14/view)
+
+ChatterGrid exposes a RESTful API that allows users to perform various actions, such as creating thoughts and adding reactions. To interact with the API, you can use tools like Insomnia.
+
+Here are some example API endpoints:
+
+- GET /api/thoughts: Fetches all thoughts
+- GET /api/thoughts/:thoughtId: Fetches a single thought by its ID
+- POST /api/thoughts: Creates a new thought
+- PUT /api/thoughts/:thoughtId: Updates a thought by its ID
+- DELETE /api/thoughts/:thoughtId: Deletes a thought by its ID
+- POST /api/thoughts/:thoughtId/reactions: Adds a reaction to a thought
+- DELETE /api/thoughts/:thoughtId/reactions/:reactionId: Deletes a reaction from a thought
+
+For a complete list of available endpoints, refer to the project's routes directory.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
   
@@ -101,19 +148,6 @@ MIT
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<a name="resources"></a>
-## :mag_right: Resources
-
-* [Express.js](https://expressjs.com/)
-* [uuid](https://www.npmjs.com/package/uuidv4)
-* [Heroku](https://devcenter.heroku.com/categories/reference)
-* [Canva](https://www.canva.com/)
-* [How To Create a Web Server in Node.js with the HTTP Module](https://www.digitalocean.com/community/tutorials/how-to-create-a-web-server-in-node-js-with-the-http-module)
-* [break](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break)
-* [Node.js util.promisify() Method](https://www.geeksforgeeks.org/node-js-util-promisify-method/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <a name="questions"></a>
 
 ## :mailbox_with_no_mail: Questions?
@@ -127,10 +161,6 @@ If you have any questions about this project, please don't hesitate to reach out
 2. **Create a new issue:** If you can't find the answer to your question in the documentation, please create a new issue in the project's issue tracker. Be sure to provide as much detail as possible about your question, including any relevant code snippets or screenshots.
 
 3. **Contact cleclair71 directly:** If you prefer to contact me directly, you can do so by sending me an email at cassieleclair71@gmail.com. Please include "Question about README Generator" in the subject line so that I can quickly identify your message.
-
-   <p align="center"> 
-   <a href="https://github.com/cleclair71/readme-generator/tree/master">My Repository</a>
-   </p>
    
 ### :pray: Feedback and Suggestions
 
