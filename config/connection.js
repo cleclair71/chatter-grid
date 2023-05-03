@@ -1,17 +1,9 @@
 const mongoose = require('mongoose');
 
-// mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/chatter-grid', {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-// }
-// );
-
-// mongoose.set('debug', true);
-
-// module.exports = mongoose.connection;
-
 const connect = async () => {
     try {
+        // Replace 'your-mongodb-uri' with your MongoDB URI if using an external database
+        // or use the provided localhost URI for local development
         await mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/chatter-grid', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
